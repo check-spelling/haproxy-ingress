@@ -2147,7 +2147,7 @@ See also:
 | `redirect-to-code`    | `Global` | `302`   | v0.13 |
 
 Configures HTTP redirect. Redirect *from* matches source hostnames that should be redirected
-to the hostname declared in the ingess spec. Redirect *to* uses the hostname declared in the
+to the hostname declared in the ingress spec. Redirect *to* uses the hostname declared in the
 ingress spec as the matching source and redirects the request to the configured URL. See
 examples below.
 
