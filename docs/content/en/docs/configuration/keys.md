@@ -1046,8 +1046,8 @@ See also:
 | `prometheus-port` | `Global` |         | v0.10 |
 
 * `healthz-port`: Define the port number HAProxy should listen to in order to answer for health checking requests. Use `/healthz` as the request path.
-* `http-port`: Define the port number of unencripted HTTP connections.
-* `https-port`: Define the port number of encripted HTTPS connections.
+* `http-port`: Define the port number of unencrypted HTTP connections.
+* `https-port`: Define the port number of encrypted HTTPS connections.
 * `prometheus-port`: Define the port number of the haproxy's internal Prometheus exporter. Defaults to not create the listener. A listener without being scraped does not use system resources, except for the listening port. The internal exporter supports scope filter as a query string, eg `/metrics?scope=frontend&scope=backend` will only export frontends and backends. See the full description in the [HAProxy's Prometheus exporter doc](https://git.haproxy.org/?p=haproxy-2.0.git;a=blob;f=contrib/prometheus-exporter/README;hb=HEAD).
 
 {{% alert title="Note" %}}
@@ -2560,9 +2560,9 @@ Hostnames configured as `ssl-passthrough` configures HAProxy in the following wa
 | `ssl-redirect`              | `Path`   | `true`                        |       |
 | `ssl-redirect-code`         | `Global` | `302`                         | v0.10 |
 
-Configures if an encripted connection should be used.
+Configures if an encrypted connection should be used.
 
-* `ssl-redirect`: Defines if HAProxy should send a `302 redirect` response to requests made on unencripted connections. Note that this configuration will only make effect if TLS is [configured](https://github.com/jcmoraisjr/haproxy-ingress/tree/master/examples/tls-termination).
+* `ssl-redirect`: Defines if HAProxy should send a `302 redirect` response to requests made on unencrypted connections. Note that this configuration will only make effect if TLS is [configured](https://github.com/jcmoraisjr/haproxy-ingress/tree/master/examples/tls-termination).
 * `ssl-redirect-code`: Defines the HTTP status code used in the redirect. The default value is `302` if not declared. Supported values are `301`, `302`, `303`, `307` and `308`.
 * `no-tls-redirect-locations`: Defines a comma-separated list of URLs that should be removed from the TLS redirect. Requests to `:80` http port and starting with one of the URLs from the list will not be redirected to https despite of the TLS redirect configuration. This option defaults to `/.well-known/acme-challenge`, used by ACME protocol.
 
