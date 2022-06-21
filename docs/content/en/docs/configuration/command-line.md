@@ -133,7 +133,7 @@ attempted.
 ## --backend-shards
 
 Defines how many files should be used to configure the haproxy backends. The default value is
-0 (zero) which uses one single file to configure the whole haproxy process. Values greather than
+0 (zero) which uses one single file to configure the whole haproxy process. Values greater than
 0 (zero) splits the backend configuration into separated files. Only files with changed backends
 are parsed and written to disk, reducing io and cpu usage on big clusters - about 1000 or more
 services.
