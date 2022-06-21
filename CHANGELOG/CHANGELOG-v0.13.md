@@ -584,4 +584,4 @@ New features and improvements since `v0.12-beta.1`:
 
 ## Other
 
-* Duplicate Travis CI to Github Actions [#732](https://github.com/jcmoraisjr/haproxy-ingress/pull/732) (rikatz)
+* Duplicate Travis CI to GitHub Actions [#732](https://github.com/jcmoraisjr/haproxy-ingress/pull/732) (rikatz)
