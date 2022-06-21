@@ -785,7 +785,7 @@ func (c *converter) addBackendWithClass(source *annotations.Source, pathLink hat
 			// we add IngressClass Parameters after service and ingress annotations,
 			// ignoring conflicts. This would really conflict with other Parameters
 			// only if the same host+path is declared twice, but such duplication is
-			// already filtred out in the ingress parsing.
+			// already filtered out in the ingress parsing.
 			_ = mapper.AddAnnotations(source, pathLink, cfg)
 		}
 	}
