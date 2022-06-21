@@ -138,7 +138,7 @@ Other notable changes include:
 
 ## Release notes (r12)
 
-This release fixes backend configuration snippets with blank lines. Such blanck lines were being rejected due to a wrong parsing of a missing `--disable-config-keywords` command-line option.
+This release fixes backend configuration snippets with blank lines. Such blank lines were being rejected due to a wrong parsing of a missing `--disable-config-keywords` command-line option.
 
 Besides that, a few other improvements were made:
 
