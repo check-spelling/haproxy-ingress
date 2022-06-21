@@ -116,7 +116,7 @@ controller:
 
 ## Configure the dashboard
 
-Import [this](https://grafana.com/grafana/dashboards/12056) Grafana dashboard. If Grafana was deployed using the steps provided in this walktrought:
+Import [this](https://grafana.com/grafana/dashboards/12056) Grafana dashboard. If Grafana was deployed using the steps provided in this walkthrough:
 
 * Open Grafana page - the URL is the same provided in the `prometheus-operator-values.yaml` file and should resolve to the ingress deployment
 * Log in to Grafana, user is `admin` and the first password is `prom-operator`
