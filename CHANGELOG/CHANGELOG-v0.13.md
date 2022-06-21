@@ -148,7 +148,7 @@ This release fixes the following issues:
 
 Besides that, a few other improvements were made:
 
-- All `var()` sample fetch now have the `-m str` match method. This fixes compatiblity with HAProxy 2.5, which now enforces a match method when using `var()`. This however isn't enough to use HAProxy 2.5 as an external HAProxy due to incompatibility changes made in the master socket responses, hence the update in the [supported HAProxy versions](https://github.com/jcmoraisjr/haproxy-ingress/#use-haproxy-ingress). A future HAProxy Ingress release will make v0.12 and v0.13 branches compatible with HAProxy 2.5.
+- All `var()` sample fetch now have the `-m str` match method. This fixes compatibility with HAProxy 2.5, which now enforces a match method when using `var()`. This however isn't enough to use HAProxy 2.5 as an external HAProxy due to incompatibility changes made in the master socket responses, hence the update in the [supported HAProxy versions](https://github.com/jcmoraisjr/haproxy-ingress/#use-haproxy-ingress). A future HAProxy Ingress release will make v0.12 and v0.13 branches compatible with HAProxy 2.5.
 - A new configuration key `session-cookie-domain` was added due to how modern browsers parses the `domain` cookie attribute. Prefer to use this new configuration key instead of `session-cookie-shared`. Further information can be found in the [affinity documentation](https://haproxy-ingress.github.io/v0.13/docs/configuration/keys/#affinity).
 - Embedded HAProxy was updated from 2.3.16 to 2.3.17.
 - client-go was updated from v0.20.14 to v0.20.15.
