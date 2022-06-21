@@ -948,7 +948,7 @@ Fixes and improvements since [v0.6-beta.5](#v06-beta5):
 
 Fixes and improvements since [v0.6-beta.6](#v06-beta6):
 
-* Restrict access of sticky session cookie by client Javascript code - [#251](https://github.com/jcmoraisjr/haproxy-ingress/pull/251)
+* Restrict access of sticky session cookie by client JavaScript code - [#251](https://github.com/jcmoraisjr/haproxy-ingress/pull/251)
 
 ## v0.5
 
