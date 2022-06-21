@@ -66,7 +66,7 @@ Highlights of this version
 * Ingress API upgrade from `networking.k8s.io/v1beta1` to `networking.k8s.io/v1`.
 * Partial implementation of Gateway API - [doc](https://haproxy-ingress.github.io/v0.13/docs/configuration/gateway-api/)
 * TCP services using ingress resources - [doc](https://haproxy-ingress.github.io/v0.13/docs/configuration/keys/#tcp-services)
-* External authetication - [doc](https://haproxy-ingress.github.io/v0.13/docs/configuration/keys/#auth-external)
+* External authentication - [doc](https://haproxy-ingress.github.io/v0.13/docs/configuration/keys/#auth-external)
 * Several new custom configurations - [doc](https://haproxy-ingress.github.io/v0.13/docs/configuration/keys/#configuration-snippet)
 
 ## Upgrade notes
