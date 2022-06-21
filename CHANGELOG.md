@@ -775,7 +775,7 @@ Fixes and improvements since [v0.6](#v06):
 
 Fixes and improvements since [v0.7-beta.1](#v07-beta1):
 
-* Fix ssl-passthrought (only v0.7) [#258](https://github.com/jcmoraisjr/haproxy-ingress/pull/258)
+* Fix ssl-passthrough (only v0.7) [#258](https://github.com/jcmoraisjr/haproxy-ingress/pull/258)
 
 ### v0.7-beta.3
 
