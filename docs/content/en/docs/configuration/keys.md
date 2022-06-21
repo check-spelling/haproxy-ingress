@@ -945,7 +945,7 @@ HAProxy Ingress won't refuse to change the default naming if dynamic update is `
 |----------------------------|-----------|---------|---------|
 | `assign-backend-server-id` | `Backend` | `false` | `v0.13` |
 
-When `true`, each backend server will receive an `id` in HAProxy config based on the Kubernetes UID of the pod backing it. When using a hash-based [`balance-algorithm`](#balance-algorithm) (for example `uri` or `source`) together with consistent hashing, this will maintain the stability of assignments when pods are added or removed — that is, a given URI component or source IP will mostly keep hashing to the same server. When this seetting is `false`, an addition or deletion in the server list may disturb the hash assignments of some or all of the remaining servers.
+When `true`, each backend server will receive an `id` in HAProxy config based on the Kubernetes UID of the pod backing it. When using a hash-based [`balance-algorithm`](#balance-algorithm) (for example `uri` or `source`) together with consistent hashing, this will maintain the stability of assignments when pods are added or removed — that is, a given URI component or source IP will mostly keep hashing to the same server. When this setting is `false`, an addition or deletion in the server list may disturb the hash assignments of some or all of the remaining servers.
 
 Server IDs can't dynamically updated, so if this option is enabled, adding or removing a server will cause a reload even when [`dynamic-scaling`](#dynamic-scaling) is true.
 
