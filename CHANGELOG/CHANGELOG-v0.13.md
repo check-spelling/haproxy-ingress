@@ -144,7 +144,7 @@ Other notable changes include:
 This release fixes the following issues:
 
 - Backend configuration snippets with blank lines were being rejected due to a wrong parsing of a missing `--disable-config-keywords` command-line option.
-- Annotation based TCP services were incorrectly fetching the SNI extension of an encrypted connection that's decyphered by HAProxy. `req.ssl_sni` was being used instead of `ssl_fc_sni`.
+- Annotation based TCP services were incorrectly fetching the SNI extension of an encrypted connection that's deciphered by HAProxy. `req.ssl_sni` was being used instead of `ssl_fc_sni`.
 
 Besides that, a few other improvements were made:
 
@@ -157,7 +157,7 @@ Besides that, a few other improvements were made:
 
 * Add disableKeywords only if defined [#876](https://github.com/jcmoraisjr/haproxy-ingress/pull/876) (jcmoraisjr)
 * Add match method on all var() sample fetch method [#879](https://github.com/jcmoraisjr/haproxy-ingress/pull/879) (jcmoraisjr)
-* Fix sni sample fetch on ssl decyphered tcp conns [#884](https://github.com/jcmoraisjr/haproxy-ingress/pull/884) (jcmoraisjr)
+* Fix sni sample fetch on ssl deciphered tcp conns [#884](https://github.com/jcmoraisjr/haproxy-ingress/pull/884) (jcmoraisjr)
 * Add session-cookie-domain configuration key [#889](https://github.com/jcmoraisjr/haproxy-ingress/pull/889) (jcmoraisjr) - [doc](https://haproxy-ingress.github.io/v0.13/docs/configuration/keys/#affinity)
   * Configuration keys:
     * `session-cookie-domain`

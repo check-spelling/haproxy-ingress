@@ -188,7 +188,7 @@ New features and improvements since `v0.13-beta.1`:
 * Fix typo: s/distict/distinct [#867](https://github.com/jcmoraisjr/haproxy-ingress/pull/867) (juggernaut)
 * Add disableKeywords only if defined [#876](https://github.com/jcmoraisjr/haproxy-ingress/pull/876) (jcmoraisjr)
 * Add match method on all var() sample fetch method [#879](https://github.com/jcmoraisjr/haproxy-ingress/pull/879) (jcmoraisjr)
-* Fix sni sample fetch on ssl decyphered tcp conns [#884](https://github.com/jcmoraisjr/haproxy-ingress/pull/884) (jcmoraisjr)
+* Fix sni sample fetch on ssl deciphered tcp conns [#884](https://github.com/jcmoraisjr/haproxy-ingress/pull/884) (jcmoraisjr)
 * Fix docker-build target name [#896](https://github.com/jcmoraisjr/haproxy-ingress/pull/896) (rgherta)
 
 ## Other
