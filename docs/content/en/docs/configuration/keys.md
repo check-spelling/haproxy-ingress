@@ -1302,7 +1302,7 @@ Configuration of connection limits.
 
 * `max-connections`: Define the maximum concurrent connections on all proxies. Defaults to `2000` connections, which is also the HAProxy default configuration.
 * `maxconn-server`: Defines the maximum concurrent connections each server of a backend should receive. If not specified or a value lesser than or equal zero is used, an unlimited number of connections will be allowed. When the limit is reached, new connections will wait on a queue.
-* `maxqueue-server`: Defines the maximum number of connections should wait in the queue of a server. When this number is reached, new requests will be redispached to another server, breaking sticky session if configured. The queue will be unlimited if the annotation is not specified or a value lesser than or equal to zero is used.
+* `maxqueue-server`: Defines the maximum number of connections should wait in the queue of a server. When this number is reached, new requests will be redispatched to another server, breaking sticky session if configured. The queue will be unlimited if the annotation is not specified or a value lesser than or equal to zero is used.
 
 See also:
 
