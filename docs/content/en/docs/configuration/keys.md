@@ -976,7 +976,7 @@ See also:
 Configures listening IP and port for HTTP/s incoming requests. These
 configuration keys have backward compatibility with [Bind IP addr](#bind-ip-addr),
 [Bind port](#bind-port) and [Fronting proxy](#fronting-proxy-port) keys.
-The bind configuration keys in this section have precedente if declared.
+The bind configuration keys in this section have precedent if declared.
 
 Any HAProxy supported option can be used, this will be copied verbatim to the
 bind keyword. See HAProxy
