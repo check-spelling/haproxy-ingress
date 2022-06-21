@@ -216,7 +216,7 @@ func (c *converter) syncPartial() {
 	trackedLinks := c.tracker.QueryLinks(c.changed.Links, true)
 
 	dirtyIngs := trackedLinks[convtypes.ResourceIngress]
-	dirtyTCPServices := trackedLinks[convtypes.RersourceHATCPService]
+	dirtyTCPServices := trackedLinks[convtypes.ResourceHATCPService]
 	dirtyHosts := trackedLinks[convtypes.ResourceHAHostname]
 	dirtyBacks := trackedLinks[convtypes.ResourceHABackend]
 	dirtyUsers := trackedLinks[convtypes.ResourceHAUserlist]
@@ -293,7 +293,7 @@ func (c *converter) trackAddedIngress() {
 		port, _ := strconv.Atoi(c.readConfigKey(ing.Annotations, ingtypes.TCPTCPServicePort))
 		ctx := convtypes.ResourceHAHostname
 		if port > 0 {
-			ctx = convtypes.RersourceHATCPService
+			ctx = convtypes.ResourceHATCPService
 		}
 		for _, rule := range ing.Spec.Rules {
 			c.tracker.TrackNames(convtypes.ResourceIngress, name, ctx, normalizeHostname(rule.Host, port))
@@ -692,7 +692,7 @@ func (c *converter) addTCPService(source *annotations.Source, hostname string, p
 		tcpservice := strings.TrimPrefix(hostname, hatypes.DefaultHost)
 		return nil, fmt.Errorf("tcp service %s was already assigned to %s", tcpservice, tcpHost.Backend)
 	}
-	c.tracker.TrackNames(source.Type, source.FullName(), convtypes.RersourceHATCPService, hostname)
+	c.tracker.TrackNames(source.Type, source.FullName(), convtypes.ResourceHATCPService, hostname)
 	mapper, found := c.tcpsvcAnnotations[tcpPort]
 	if !found {
 		mapper = c.mapBuilder.NewMapper()
@@ -735,7 +735,7 @@ func (c *converter) addBackendWithClass(source *annotations.Source, pathLink hat
 		// it works. There is a refactor to be made in some haproxy model types
 		// to better fit gateway api, this should help here, otherwise we'll
 		// need to evolve to an implementation that's not based on assumptions.
-		ctx = convtypes.RersourceHATCPService
+		ctx = convtypes.ResourceHATCPService
 	}
 	c.tracker.TrackRefName([]convtypes.TrackingRef{
 		{Context: convtypes.ResourceService, UniqueName: fullSvcName},
