@@ -110,7 +110,7 @@ parsing services and ingress objects. The default value is `haproxy-ingress.gith
 The default configuration means declare eg a SSL Redirect annotation with
 `haproxy-ingress.github.io/ssl-redirect: "true"` or `ingress.kubernetes.io/ssl-redirect: "true"`.
 
-The order of the declaration is used to priorize one of them if the same configuration key is
+The order of the declaration is used to prioritize one of them if the same configuration key is
 declared twice - if two distinct prefix is used to configure the same key in the same ingress or
 service resource, the value of the annotation with the prefix that was configured first in this
 command-line option is used.
