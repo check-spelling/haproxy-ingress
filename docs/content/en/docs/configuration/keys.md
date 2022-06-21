@@ -17,9 +17,9 @@ from Kubernetes resources, and this can be done in a couple of ways:
 
 The list above also describes the precedence if the same configuration key is used
 in more than one resource: Global configurations can be overridden by IngressClass
-configurations, that can be overriden by Ingress resource configurations and so on.
+configurations, that can be overridden by Ingress resource configurations and so on.
 This hierarchy creates a flexible model, where commonly used configurations can be
-made in a higher level and overriden by local changes.
+made in a higher level and overridden by local changes.
 
 The following sections describe in a few more details how HAProxy Ingress classifies
 an Ingress to be part of the final configuration, and how it reads the configuration
