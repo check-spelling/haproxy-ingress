@@ -507,7 +507,7 @@ func (c *converter) syncIngressTCP(source *annotations.Source, ing *networking.I
 			return err
 		}
 		if !tcpService.Backend.IsEmpty() {
-			return fmt.Errorf("service '%s' on %v: backend for port '%d' was already assinged", svcName, source, tcpServicePort)
+			return fmt.Errorf("service '%s' on %v: backend for port '%d' was already assigned", svcName, source, tcpServicePort)
 		}
 		fullSvcName := ing.Namespace + "/" + svcName
 		pathLink := hatypes.CreatePathLink(hostname, "/", hatypes.MatchExact)
