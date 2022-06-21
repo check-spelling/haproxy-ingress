@@ -534,7 +534,7 @@ Improvements on the new internal representation and converters:
   * Authentication with client certificate is used - this will not be a limitation on v0.9 controller and HAProxy 1.9.x
   * `ssl-passthrough` is used
   * Conflicting `timeout client` declared as annotations
-* Fix HAProxy config parsing of a very long list of whitelist CIDRs or a very long list of overlaping /paths in the same domain
+* Fix HAProxy config parsing of a very long list of whitelist CIDRs or a very long list of overlapping /paths in the same domain
 
 Fixes and improvements since [v0.7](#v07):
 
