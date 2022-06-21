@@ -173,7 +173,7 @@ Status Codes  [code:count]               200:1
 Error Set:
 ```
 
-Now the real test. Adjust the duration and rate (number of requests per second) if needed. A dual core VM dedicated to HAProxy Ingress should accept a few thousands requests per second. Lets configure `200` which should move some lines in the dashoard:
+Now the real test. Adjust the duration and rate (number of requests per second) if needed. A dual core VM dedicated to HAProxy Ingress should accept a few thousands requests per second. Lets configure `200` which should move some lines in the dashboard:
 
 ```
 IP=192.168.0.11
