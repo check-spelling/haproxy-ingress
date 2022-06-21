@@ -813,7 +813,7 @@ Configuration examples:
 
 * `auth-url: "http://10.0.0.2"`: Authentication service accepts plain HTTP connection, TCP port `80` and root path are used.
 * `auth-url: "https://10.0.0.2/auth"`: Authentication service accepts HTTPS connection, TCP port `443` and path `/auth` are used.
-* `auth-url: "https://auth.local:8443"`: Domain `auth.local` is resolved during configuration building, and requests will be distributed among all its IPs, using the default load balance algorithm. Authentication service accepts HTTPS connection, TCP port `8443` and root path are used. SNI extention and Host header are added to the request.
+* `auth-url: "https://auth.local:8443"`: Domain `auth.local` is resolved during configuration building, and requests will be distributed among all its IPs, using the default load balance algorithm. Authentication service accepts HTTPS connection, TCP port `8443` and root path are used. SNI extension and Host header are added to the request.
 * `auth-url: "svc://auth-cluster:8443/auth"`: A service named `auth-cluster` will be used as the destination of the request, service port `8443` and path `/auth`. The service can be annotated with Backend and Path scoped configuration keys, eg [`secure-backends`](#secure-backend) to provide a secure connection.
 
 **Forwarding headers**
@@ -1879,7 +1879,7 @@ Customize the tcp, http or https log format using log format variables. Only use
 
 * `auth-log-format`: log format of all auth external frontends. Use `default` to configure default HTTP log format, defaults to not log.
 * `http-log-format`: log format of all HTTP proxies, defaults to HAProxy default HTTP log format.
-* `https-log-format`: log format of TCP proxy used to inspect SNI extention. Use `default` to configure default TCP log format, defaults to not log.
+* `https-log-format`: log format of TCP proxy used to inspect SNI extension. Use `default` to configure default TCP log format, defaults to not log.
 * `tcp-log-format`: log format of the ConfigMap based TCP proxies. Defaults to HAProxy default TCP log format. See also [`--tcp-services-configmap`]({{% relref "command-line#tcp-services-configmap" %}}) command-line option.
 * `tcp-service-log-format`: log format of TCP frontends, configured via ingress resources and [`tcp-service-port`](#tcp-services) configuration key. Defaults to HAProxy default TCP log format.
 
